@@ -1,0 +1,48 @@
+# =====================================================================
+# SOLIN - ambiente LOCAL de teste
+#
+# Serve apenas para validar as imagens antes de subir para a nuvem.
+# A entrega da Sprint 3 roda em Azure Container Instances, criados por
+# Azure CLI (ver scripts/). Nada aqui e usado em producao.
+# =====================================================================
+services:
+
+  db:
+    build: ./db
+    image: 564099-solin-db:1.0
+    container_name: solin-db
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - "3306:3306"
+    volumes:
+      # Volume NOMEADO: o dado sobrevive a remocao do container.
+      # Na nuvem, o equivalente e o Azure File Share.
+      - solin-dados:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+  app:
+    build: ./app
+    image: 564099-solin-app:1.0
+    container_name: solin-app
+    environment:
+      DB_HOST: db
+      DB_PORT: 3306
+      DB_NAME: ${DB_NAME}
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - "8080:8080"
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  solin-dados:

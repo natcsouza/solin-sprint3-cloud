@@ -1,0 +1,19 @@
+﻿# Credenciais - nunca versionar
+.env
+*.log
+
+# Build do Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+
+# Sistema
+.DS_Store
+Thumbs.db

@@ -1,0 +1,9 @@
+{
+  "nome": "Fiona",
+  "raca": "Border Collie (pelagem longa)",
+  "dataNascimento": "2022-05-30",
+  "pesoKg": 18.6,
+  "sexo": "FEMEA",
+  "tutorId": 3,
+  "especieId": 1
+}
