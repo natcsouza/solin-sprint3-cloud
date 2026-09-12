@@ -165,11 +165,19 @@ cd solin-sprint3-cloud
 
 ## Passo 2 — definir as senhas
 
-As senhas **não** estão em nenhum arquivo do repositório. Exporte antes de tudo:
+As senhas **não** estão em nenhum arquivo do repositório. Elas são digitadas no
+momento da execução, com `read -s`, que **não ecoa o que foi digitado** — nem na
+tela, nem no histórico do shell:
 
 ```bash
-export DB_ROOT_PASSWORD='SuaSenhaForteDoRoot'
-export DB_PASSWORD='SuaSenhaForteDoApp'
+read -s -p "Senha do root do banco: " DB_ROOT_PASSWORD && export DB_ROOT_PASSWORD && echo
+read -s -p "Senha do usuario da aplicacao: " DB_PASSWORD && export DB_PASSWORD && echo
+```
+
+Conferindo que entraram, sem revelar o conteúdo:
+
+```bash
+echo "root: ${#DB_ROOT_PASSWORD} caracteres | app: ${#DB_PASSWORD} caracteres"
 ```
 
 ## Passo 3 — login na Azure
