@@ -32,12 +32,15 @@ com evidência direto no banco e a prova de persistência após reiniciar o cont
 
 | | |
 |---|---|
-| **Assistir / baixar** | [`docs/video/SOLIN-Sprint3-apresentacao.mp4`](docs/video/SOLIN-Sprint3-apresentacao.mp4) |
-| **Download direto** | [Release `v1.0-sprint3`](../../releases/tag/v1.0-sprint3) |
+| **Assistir online** | _link do YouTube (não listado) — a ser preenchido_ |
+| **Baixar** | [Release `v1.0-sprint3`](../../releases/tag/v1.0-sprint3) · download direto, sem clonar |
+| No repositório | [`docs/video/SOLIN-Sprint3-apresentacao.mp4`](docs/video/SOLIN-Sprint3-apresentacao.mp4) |
 | Duração | 16 min 55 s |
 | Formato | MP4 · H.264 · áudio AAC · 42,6 MB |
 
-O GitHub reproduz o arquivo na própria página, sem precisar clonar o repositório.
+O GitHub não reproduz o arquivo na página: o preview de blob vale só até ~1 MB,
+acima disso a página oferece apenas o download. Para assistir sem baixar, use o
+link do YouTube.
 
 ---
 
