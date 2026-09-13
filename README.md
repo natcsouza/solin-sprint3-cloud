@@ -32,9 +32,9 @@ com evidência direto no banco e a prova de persistência após reiniciar o cont
 
 | | |
 |---|---|
-| **Assistir no YouTube** | **https://youtu.be/7JhTvFxJsOk** |
-| Baixar | [Release `v1.0-sprint3`](../../releases/tag/v1.0-sprint3) · download direto, sem clonar |
-| No repositório | [`docs/video/SOLIN-Sprint3-apresentacao.mp4`](docs/video/SOLIN-Sprint3-apresentacao.mp4) |
+| **YouTube** | **https://youtu.be/7JhTvFxJsOk** |
+| Download direto | [Release `v1.0-sprint3`](../../releases/tag/v1.0-sprint3) — sem precisar clonar |
+| Arquivo versionado | [`docs/video/SOLIN-Sprint3-apresentacao.mp4`](docs/video/SOLIN-Sprint3-apresentacao.mp4) |
 | Duração | 16 min 55 s |
 | Formato | MP4 · H.264 · 1438×1052 · áudio AAC · 42,6 MB |
 
@@ -102,7 +102,7 @@ solin-sprint3-cloud ──► docker build ────────────�
 | **ACR** | registro privado das imagens | mantém as imagens dentro da assinatura, com autenticação integrada — diferente do Docker Hub, que é público |
 | **ACI (app)** | executa a API | cobrança por segundo e sem VM para administrar; o container sobe com usuário sem privilégio |
 | **ACI (banco)** | executa o MySQL | o banco também é container, como exige a opção 1 do enunciado |
-| **File Share** | persistência | local usávamos volume nomeado do Docker; na nuvem o equivalente é o File Share montado em `/var/lib/mysql` |
+| **File Share** | persistência | no ambiente local usávamos um volume nomeado do Docker; na nuvem o equivalente é o File Share montado em `/var/lib/mysql` |
 | **VM Linux** | compilar as imagens | **temporária**, não faz parte da solução publicada — é excluída ao final |
 
 > **Sobre a VM de build:** o Cloud Shell não possui o daemon do Docker, e o
