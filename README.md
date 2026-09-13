@@ -74,7 +74,10 @@ para administrar.
 
 ## Arquitetura
 
-![Arquitetura da solução SOLIN](docs/arquitetura.svg)
+![Arquitetura da solução SOLIN](docs/arquitetura.jpg)
+
+<sub>Versão vetorial, para ampliar sem perder nitidez:
+[`docs/arquitetura.svg`](docs/arquitetura.svg)</sub>
 
 O caminho completo, do código ao usuário:
 
