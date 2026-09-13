@@ -23,11 +23,13 @@ export RG="rg-${RM}-${PROJETO}"
 export LOCATION="eastus2"
 
 export ACR_NAME="acr${RM}${PROJETO}"        # so letras minusculas e numeros
-# O nome da conta de armazenamento e unico no mundo inteiro, nao so na
-# assinatura. E ele continua reservado por um tempo depois de apagada,
-# entao recriar o ambiente logo em seguida esbarra em "already taken".
-# O sufixo db resolve; se um dia der o mesmo erro, basta trocar aqui.
-export STORAGE_NAME="st${RM}${PROJETO}db"   # so letras minusculas e numeros
+# O nome de uma conta de armazenamento e unico no MUNDO, nao so na
+# assinatura: ele vira um endereco publico, como
+# stsolinfiap2026.blob.core.windows.net. E depois de apagada, a Azure
+# segura o nome por um tempo, para ninguem assumir o endereco antigo.
+# Por isso aqui NAO usamos o padrao st<RM><projeto>: esse nome ja foi
+# usado e fica em quarentena cada vez que o ambiente e recriado.
+export STORAGE_NAME="stsolinfiap2026"      # so letras minusculas e numeros
 export SHARE_NAME="${PROJETO}-mysql"
 
 export ACI_DB="aci-${RM}-${PROJETO}-db"
