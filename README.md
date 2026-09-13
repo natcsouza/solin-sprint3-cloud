@@ -360,7 +360,8 @@ docker compose down
 │   ├── Dockerfile             MySQL 8.0 com o DDL embutido
 │   └── init/01-ddl.sql
 ├── docs/
-│   ├── arquitetura.svg
+│   ├── arquitetura.jpg        desenho macro da arquitetura
+│   ├── arquitetura.svg        a mesma arquitetura, em vetor
 │   └── video/
 │       └── SOLIN-Sprint3-apresentacao.mp4   vídeo da entrega (16m55s)
 ├── json/                      payloads de teste dos 4 verbos
