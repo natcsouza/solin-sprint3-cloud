@@ -32,15 +32,11 @@ com evidência direto no banco e a prova de persistência após reiniciar o cont
 
 | | |
 |---|---|
-| **Assistir no YouTube** | **https://youtu.be/FTTCQGBEY_k** |
+| **Assistir no YouTube** | **https://youtu.be/7JhTvFxJsOk** |
 | Baixar | [Release `v1.0-sprint3`](../../releases/tag/v1.0-sprint3) · download direto, sem clonar |
 | No repositório | [`docs/video/SOLIN-Sprint3-apresentacao.mp4`](docs/video/SOLIN-Sprint3-apresentacao.mp4) |
-| Duração | 17 min 43 s |
-| Formato | MP4 · H.264 · 1438×1052 · áudio AAC · 40 MB |
-
-Gravação contínua, **sem cortes durante os testes do CRUD e a prova de
-persistência**. Aos 15 min 33 s o Cloud Shell perde a conexão sozinho e se
-reconecta; os comandos são reexecutados na sequência, tudo visível na tela.
+| Duração | 16 min 55 s |
+| Formato | MP4 · H.264 · 1438×1052 · áudio AAC · 42,6 MB |
 
 ---
 
