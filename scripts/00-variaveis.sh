@@ -23,7 +23,11 @@ export RG="rg-${RM}-${PROJETO}"
 export LOCATION="eastus2"
 
 export ACR_NAME="acr${RM}${PROJETO}"        # so letras minusculas e numeros
-export STORAGE_NAME="st${RM}${PROJETO}"     # so letras minusculas e numeros
+# O nome da conta de armazenamento e unico no mundo inteiro, nao so na
+# assinatura. E ele continua reservado por um tempo depois de apagada,
+# entao recriar o ambiente logo em seguida esbarra em "already taken".
+# O sufixo db resolve; se um dia der o mesmo erro, basta trocar aqui.
+export STORAGE_NAME="st${RM}${PROJETO}db"   # so letras minusculas e numeros
 export SHARE_NAME="${PROJETO}-mysql"
 
 export ACI_DB="aci-${RM}-${PROJETO}-db"
