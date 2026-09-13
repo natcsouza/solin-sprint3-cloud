@@ -1,221 +1,183 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1480 940" width="1480" height="940" font-family="Segoe UI, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1520" height="1010" viewBox="0 0 1520 1010" font-family="Segoe UI, Calibri, Arial, sans-serif">
   <defs>
-    <marker id="seta" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
-      <path d="M0,0 L10,4 L0,8 Z" fill="#0F6CBD"/>
+    <marker id="seta" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto">
+      <path d="M0,0 L11,4 L0,8 z" fill="#4A6274"/>
     </marker>
-    <marker id="setaVerde" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
-      <path d="M0,0 L10,4 L0,8 Z" fill="#107C41"/>
+    <marker id="setaAzul" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto">
+      <path d="M0,0 L11,4 L0,8 z" fill="#0F6CBD"/>
     </marker>
-    <marker id="setaLaranja" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
-      <path d="M0,0 L10,4 L0,8 Z" fill="#C75300"/>
+    <marker id="setaVerde" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto">
+      <path d="M0,0 L11,4 L0,8 z" fill="#107C41"/>
     </marker>
-    <marker id="setaRoxa" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
-      <path d="M0,0 L10,4 L0,8 Z" fill="#6B2FA0"/>
-    </marker>
-    <linearGradient id="fundo" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#F7FAFD"/>
-      <stop offset="100%" stop-color="#EDF3F9"/>
-    </linearGradient>
+    <style>
+      .t   { font-size:14px; fill:#1B3A57 }
+      .tb  { font-size:14px; fill:#1B3A57; font-weight:600 }
+      .ts  { font-size:12px; fill:#5A7185 }
+      .tm  { font-size:11px; fill:#6B8296 }
+      .rec { font-size:15px; font-weight:600; fill:#12324D }
+      .cx  { fill:#fff; stroke:#B9CBDA; stroke-width:1.5; rx:9 }
+      .num { font-size:13px; font-weight:700; fill:#fff }
+    </style>
   </defs>
 
-  <rect width="1480" height="940" fill="url(#fundo)"/>
+  <rect width="1520" height="1010" fill="#FBFCFD"/>
 
-  <!-- TITULO -->
-  <text x="40" y="48" font-size="27" font-weight="700" fill="#1B3A57">SOLIN — Arquitetura da solução em nuvem</text>
-  <text x="40" y="75" font-size="15" fill="#4A6274">Challenge 2026 CLYVO VET · Sprint 3 · DevOps Tools &amp; Cloud Computing · 2TDSR · Grupo SOLIN (RM 564099)</text>
-  <text x="40" y="97" font-size="14" fill="#6B7F8E">Opção escolhida: ACR + ACI — aplicação e banco de dados totalmente conteinerizados, todos os recursos criados via Azure CLI</text>
+  <!-- ================= TITULO ================= -->
+  <text x="40" y="42" font-size="23" font-weight="700" fill="#0F6CBD">SOLIN — Arquitetura da solução na nuvem</text>
+  <text x="40" y="66" class="t">Challenge 2026 CLYVO VET · Sprint 3 · Opção 1: Azure Container Registry + Azure Container Instances</text>
+  <text x="40" y="86" class="ts">Grupo SOLIN · RM 564099 · FIAP 2TDSR · DevOps Tools &amp; Cloud Computing</text>
 
-  <!-- ================= COLUNA 1: DESENVOLVIMENTO ================= -->
-  <rect x="34" y="128" width="290" height="360" rx="12" fill="#FFFFFF" stroke="#C3D4E2" stroke-width="1.6"/>
-  <rect x="34" y="128" width="290" height="40" rx="12" fill="#1B3A57"/>
-  <rect x="34" y="150" width="290" height="18" fill="#1B3A57"/>
-  <text x="54" y="155" font-size="15" font-weight="600" fill="#FFFFFF">1. Origem — GitHub</text>
+  <!-- ================= AMBIENTE DE DESENVOLVIMENTO ================= -->
+  <rect x="36" y="112" width="330" height="392" rx="14" fill="#EAF6EE" stroke="#7FC79B" stroke-width="2"/>
+  <text x="201" y="140" text-anchor="middle" class="rec" fill="#0B5C31">Ambiente de desenvolvimento</text>
+  <text x="201" y="160" text-anchor="middle" class="tm">máquina local · fora da Azure</text>
 
-  <text x="54" y="196" font-size="13.5" font-weight="600" fill="#1B3A57">solin-sprint3-cloud</text>
-  <text x="54" y="220" font-size="12.5" fill="#40566B">app/       código Java + Dockerfile</text>
-  <text x="54" y="242" font-size="12.5" fill="#40566B">db/        MySQL + Dockerfile</text>
-  <text x="54" y="264" font-size="12.5" fill="#40566B">script_bd.sql   DDL das tabelas</text>
-  <text x="54" y="286" font-size="12.5" fill="#40566B">scripts/   8 scripts Azure CLI</text>
-  <text x="54" y="308" font-size="12.5" fill="#40566B">json/      payloads de teste</text>
+  <rect x="64" y="180" width="274" height="66" class="cx"/>
+  <text x="80" y="206" class="tb">GitHub — código-fonte</text>
+  <text x="80" y="228" class="ts">natcsouza/solin-sprint3-cloud</text>
 
-  <line x1="54" y1="328" x2="304" y2="328" stroke="#DCE6EF" stroke-width="1.4"/>
-  <text x="54" y="352" font-size="13" font-weight="600" fill="#1B3A57">Stack</text>
-  <text x="54" y="374" font-size="12.5" fill="#40566B">Java 17 · Spring Boot 3.2 · JPA</text>
-  <text x="54" y="396" font-size="12.5" fill="#40566B">MySQL 8.0 · Docker · Azure CLI</text>
+  <rect x="64" y="278" width="274" height="76" class="cx"/>
+  <text x="80" y="304" class="tb">Dockerfile do App e do Banco</text>
+  <text x="80" y="324" class="ts">multi-stage · imagem final sem JDK</text>
+  <text x="80" y="342" class="ts">USER solinuser — sem privilégio</text>
 
-  <rect x="54" y="414" width="250" height="56" rx="8" fill="#FFF4E5" stroke="#E8A33D" stroke-width="1.3"/>
-  <text x="68" y="436" font-size="12" font-weight="600" fill="#8A5A00">Segurança</text>
-  <text x="68" y="456" font-size="11.5" fill="#8A5A00">nenhuma senha versionada — só .env.exemplo</text>
+  <rect x="64" y="386" width="274" height="76" class="cx"/>
+  <text x="80" y="412" class="tb">docker compose — teste local</text>
+  <text x="80" y="432" class="ts">valida app + banco antes da nuvem</text>
+  <text x="80" y="450" class="ts">volume nomeado para persistência</text>
 
-  <!-- ================= COLUNA 1b: VM DE BUILD ================= -->
-  <rect x="34" y="512" width="290" height="248" rx="12" fill="#FFFFFF" stroke="#C3D4E2" stroke-width="1.6"/>
-  <rect x="34" y="512" width="290" height="40" rx="12" fill="#107C41"/>
-  <rect x="34" y="534" width="290" height="18" fill="#107C41"/>
-  <text x="54" y="539" font-size="15" font-weight="600" fill="#FFFFFF">2. VM Linux de build</text>
+  <path d="M201,246 L201,278" stroke="#107C41" stroke-width="2" marker-end="url(#setaVerde)"/>
+  <path d="M201,354 L201,386" stroke="#107C41" stroke-width="2" marker-end="url(#setaVerde)"/>
 
-  <text x="54" y="580" font-size="12.5" font-weight="600" fill="#1B3A57">vm-564099-build · Ubuntu 24.04</text>
-  <text x="54" y="602" font-size="12" fill="#40566B">Máquina temporária, só para compilar.</text>
-  <text x="54" y="620" font-size="12" fill="#40566B">Não faz parte da solução publicada.</text>
+  <!-- ================= CLOUD SHELL ================= -->
+  <rect x="36" y="540" width="330" height="150" rx="14" fill="#EAF3FB" stroke="#0F6CBD" stroke-width="2"/>
+  <text x="201" y="570" text-anchor="middle" class="rec">Azure Cloud Shell — az CLI</text>
+  <text x="56" y="596" class="ts">Todo o provisionamento sai daqui.</text>
+  <text x="56" y="618" class="ts">9 scripts versionados em scripts/ :</text>
+  <text x="56" y="640" class="tm">01-criar-acr · 02-build-e-push · 03-criar-storage</text>
+  <text x="56" y="658" class="tm">04-criar-aci-banco · 05-criar-aci-app</text>
+  <text x="56" y="676" class="tm">06-testes-crud · 07-provar-persistencia · 99-limpar</text>
 
-  <rect x="54" y="636" width="250" height="104" rx="8" fill="#F2FAF5" stroke="#107C41" stroke-width="1.2"/>
-  <text x="68" y="658" font-size="11.5" font-family="Consolas, monospace" fill="#0B5C31">docker build -t ...-db:1.0 ./db</text>
-  <text x="68" y="678" font-size="11.5" font-family="Consolas, monospace" fill="#0B5C31">docker build -t ...-app:1.0 ./app</text>
-  <text x="68" y="698" font-size="11.5" font-family="Consolas, monospace" fill="#0B5C31">docker tag  → acr...azurecr.io</text>
-  <text x="68" y="718" font-size="11.5" font-family="Consolas, monospace" fill="#0B5C31">docker push → ACR</text>
-  <text x="68" y="736" font-size="10.5" fill="#3B7554">excluída ao final (99-limpar.sh)</text>
+  <!-- ================= CLIENTE ================= -->
+  <rect x="1108" y="112" width="330" height="92" class="cx"/>
+  <text x="1128" y="140" class="tb">Cliente — CLYVO VET</text>
+  <text x="1128" y="162" class="ts">navegador, Postman ou curl</text>
+  <text x="1128" y="184" class="tm">http://564099-solin-app.eastus2.azurecontainer.io:8080/solin</text>
 
-  <!-- seta GitHub -> VM -->
-  <line x1="179" y1="488" x2="179" y2="510" stroke="#0F6CBD" stroke-width="2.2" marker-end="url(#seta)"/>
-  <text x="188" y="504" font-size="11" fill="#0F6CBD">git clone</text>
+  <!-- ================= AZURE ================= -->
+  <rect x="404" y="228" width="1084" height="462" rx="16" fill="#EDF4FB" stroke="#0F6CBD" stroke-width="2.5"/>
+  <text x="428" y="258" class="rec">Microsoft Azure — assinatura Azure for Students</text>
+  <text x="428" y="278" class="tm">política da assinatura libera apenas: canadacentral · southcentralus · chilecentral · eastus2 · northcentralus</text>
 
-  <!-- ================= AZURE: RESOURCE GROUP ================= -->
-  <rect x="366" y="128" width="742" height="632" rx="16" fill="#FFFFFF" stroke="#0F6CBD" stroke-width="2" stroke-dasharray="8 5"/>
-  <rect x="366" y="128" width="330" height="42" rx="12" fill="#0F6CBD"/>
-  <text x="388" y="155" font-size="15.5" font-weight="600" fill="#FFFFFF">Azure · Resource Group</text>
-  <text x="700" y="155" font-size="13.5" fill="#0F6CBD" font-family="Consolas, monospace">rg-564099-solin · eastus2</text>
+  <!-- grupo de recursos -->
+  <rect x="428" y="298" width="1036" height="368" rx="12" fill="#FFFFFF" stroke="#9FC5E4" stroke-width="2" stroke-dasharray="7 5"/>
+  <text x="448" y="324" class="tb" fill="#0B4F87">Grupo de recursos: rg-564099-solin · região eastus2</text>
 
   <!-- ACR -->
-  <rect x="398" y="196" width="300" height="132" rx="10" fill="#EAF3FB" stroke="#0F6CBD" stroke-width="1.6"/>
-  <text x="418" y="224" font-size="14.5" font-weight="600" fill="#0B4F87">Azure Container Registry</text>
-  <text x="418" y="245" font-size="12.5" font-family="Consolas, monospace" fill="#0F6CBD">acr564099solin</text>
-  <line x1="418" y1="258" x2="678" y2="258" stroke="#BBD4EA"/>
-  <text x="418" y="280" font-size="12" fill="#2C5573">564099-solin-db:1.0</text>
-  <text x="418" y="300" font-size="12" fill="#2C5573">564099-solin-app:1.0</text>
-  <text x="418" y="319" font-size="10.5" fill="#6B8CA6">registro privado · RM como prefixo</text>
+  <rect x="452" y="344" width="290" height="104" class="cx" stroke="#0F6CBD"/>
+  <text x="470" y="372" class="tb">Azure Container Registry</text>
+  <text x="470" y="394" class="ts">acr564099solin.azurecr.io</text>
+  <text x="470" y="416" class="tm">564099-solin-app:1.0</text>
+  <text x="470" y="434" class="tm">564099-solin-db:1.0</text>
 
-  <!-- STORAGE -->
-  <rect x="778" y="196" width="300" height="132" rx="10" fill="#F2FAF5" stroke="#107C41" stroke-width="1.6"/>
-  <text x="798" y="224" font-size="14.5" font-weight="600" fill="#0B5C31">Conta de Armazenamento</text>
-  <text x="798" y="245" font-size="12.5" font-family="Consolas, monospace" fill="#107C41">st564099solin</text>
-  <line x1="798" y1="258" x2="1058" y2="258" stroke="#BFE0CD"/>
-  <text x="798" y="280" font-size="12" fill="#2C5573">File Share: solin-mysql</text>
-  <text x="798" y="300" font-size="12" fill="#2C5573">montado em /var/lib/mysql</text>
-  <text x="798" y="319" font-size="10.5" fill="#5C8B72">o container é descartável, o dado não</text>
+  <!-- VM de build -->
+  <rect x="782" y="344" width="290" height="104" rx="9" fill="#FFF8EC" stroke="#E8A33D" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="800" y="372" class="tb" fill="#8A5B12">VM Linux — apenas build</text>
+  <text x="800" y="394" class="ts">Standard_B2als_v2 · canadacentral</text>
+  <text x="800" y="416" class="tm">o Cloud Shell não tem daemon Docker</text>
+  <text x="800" y="434" class="tm">TEMPORÁRIA — excluída ao final</text>
 
-  <!-- ACI APP -->
-  <rect x="398" y="392" width="300" height="222" rx="10" fill="#F6F1FC" stroke="#6B2FA0" stroke-width="1.8"/>
-  <text x="418" y="420" font-size="14.5" font-weight="600" fill="#4B1F73">Container Instance — App</text>
-  <text x="418" y="441" font-size="12" font-family="Consolas, monospace" fill="#6B2FA0">aci-564099-solin-app</text>
-  <line x1="418" y1="454" x2="678" y2="454" stroke="#D8C6EA"/>
-  <text x="418" y="476" font-size="12.5" fill="#2C5573">SOLIN API · Spring Boot 3.2</text>
-  <text x="418" y="496" font-size="12.5" fill="#2C5573">1 vCPU · 1,5 GB · porta 8080</text>
-  <text x="418" y="516" font-size="11.5" fill="#2C5573">imagem multi-stage (JRE Alpine)</text>
+  <!-- Storage -->
+  <rect x="1112" y="344" width="328" height="104" class="cx" stroke="#0F6CBD"/>
+  <text x="1130" y="372" class="tb">Storage Account + File Share</text>
+  <text x="1130" y="394" class="ts">stsolinfiap2026 / solin-mysql</text>
+  <text x="1130" y="416" class="tm">montado em /var/lib/mysql</text>
+  <text x="1130" y="434" class="tm">o dado vive aqui, não no container</text>
 
-  <rect x="418" y="530" width="260" height="30" rx="6" fill="#EADFF7"/>
-  <text x="430" y="550" font-size="11.5" font-weight="600" fill="#4B1F73">USER solinuser — não roda como root</text>
+  <!-- ACI app -->
+  <rect x="452" y="500" width="290" height="132" class="cx" stroke="#107C41" stroke-width="2"/>
+  <text x="470" y="528" class="tb" fill="#0B5C31">ACI — aplicação</text>
+  <text x="470" y="550" class="ts">aci-564099-solin-app</text>
+  <text x="470" y="572" class="tm">Spring Boot 3.2 · porta 8080</text>
+  <text x="470" y="590" class="tm">USER solinuser — não é root</text>
+  <text x="470" y="612" class="tm">senhas via secure-environment-variables</text>
 
-  <text x="418" y="580" font-size="11" fill="#5E7386">env: DB_HOST, DB_PORT, DB_NAME, DB_USER</text>
-  <text x="418" y="599" font-size="11" fill="#5E7386">secure-env: DB_PASSWORD (oculta no portal)</text>
+  <!-- ACI db -->
+  <rect x="782" y="500" width="290" height="132" class="cx" stroke="#107C41" stroke-width="2"/>
+  <text x="800" y="528" class="tb" fill="#0B5C31">ACI — banco de dados</text>
+  <text x="800" y="550" class="ts">aci-564099-solin-db</text>
+  <text x="800" y="572" class="tm">MySQL 8.0 em container · porta 3306</text>
+  <text x="800" y="590" class="tm">schema criado por script_bd.sql</text>
+  <text x="800" y="612" class="tm">5 tabelas · FK_PET_TUTOR</text>
 
-  <!-- ACI DB -->
-  <rect x="778" y="392" width="300" height="222" rx="10" fill="#FFF6EC" stroke="#C75300" stroke-width="1.8"/>
-  <text x="798" y="420" font-size="14.5" font-weight="600" fill="#8A3A00">Container Instance — Banco</text>
-  <text x="798" y="441" font-size="12" font-family="Consolas, monospace" fill="#C75300">aci-564099-solin-db</text>
-  <line x1="798" y1="454" x2="1058" y2="454" stroke="#F0CFAE"/>
-  <text x="798" y="476" font-size="12.5" fill="#2C5573">MySQL 8.0 · porta 3306</text>
-  <text x="798" y="496" font-size="12.5" fill="#2C5573">1 vCPU · 1,5 GB</text>
-  <text x="798" y="516" font-size="11.5" fill="#2C5573">DDL roda na 1ª subida (initdb.d)</text>
+  <!-- ============ SETAS ============ -->
 
-  <rect x="798" y="530" width="260" height="30" rx="6" fill="#FCE7D2"/>
-  <text x="810" y="550" font-size="11.5" font-weight="600" fill="#8A3A00">5 tabelas · TB_TUTOR 1—N TB_PET</text>
+  <!-- 3: VM -> ACR (docker push) -->
+  <path d="M782,396 L746,396" stroke="#4A6274" stroke-width="2.5" marker-end="url(#seta)"/>
+  <text x="764" y="388" text-anchor="middle" class="tm">push</text>
 
-  <text x="798" y="580" font-size="11" fill="#5E7386">env: MYSQL_DATABASE, MYSQL_USER</text>
-  <text x="798" y="599" font-size="11" fill="#5E7386">secure-env: MYSQL_ROOT_PASSWORD, MYSQL_PASSWORD</text>
+  <!-- 4: Cloud Shell -> grupo de recursos -->
+  <path d="M366,600 C400,600 410,540 428,470" stroke="#0F6CBD" stroke-width="2.5" fill="none" marker-end="url(#setaAzul)"/>
 
-  <!-- Deploy via CLI -->
-  <rect x="398" y="646" width="680" height="86" rx="10" fill="#EAF3FB" stroke="#0F6CBD" stroke-width="1.4"/>
-  <text x="418" y="672" font-size="13.5" font-weight="600" fill="#0B4F87">Provisionamento — 100% Azure CLI</text>
-  <text x="418" y="695" font-size="11.5" font-family="Consolas, monospace" fill="#2C5573">01-criar-acr · 02-build-e-push · 03-criar-storage · 04-criar-aci-banco</text>
-  <text x="418" y="716" font-size="11.5" font-family="Consolas, monospace" fill="#2C5573">05-criar-aci-app · 06-testes-crud · 07-provar-persistencia · 99-limpar</text>
+  <!-- 5: ACR -> ACIs (pull) -->
+  <path d="M560,448 L560,500" stroke="#0F6CBD" stroke-width="2" marker-end="url(#setaAzul)"/>
+  <path d="M680,448 C760,470 830,478 860,500" stroke="#0F6CBD" stroke-width="2" fill="none" marker-end="url(#setaAzul)"/>
 
-  <!-- ================= USUARIOS / CRUD ================= -->
-  <rect x="1150" y="196" width="296" height="150" rx="12" fill="#FFFFFF" stroke="#C3D4E2" stroke-width="1.6"/>
-  <rect x="1150" y="196" width="296" height="40" rx="12" fill="#1B3A57"/>
-  <rect x="1150" y="218" width="296" height="18" fill="#1B3A57"/>
-  <text x="1170" y="223" font-size="15" font-weight="600" fill="#FFFFFF">Tutor · Clínica parceira</text>
-  <text x="1170" y="266" font-size="12.5" fill="#40566B">Acesso público pela internet</text>
-  <text x="1170" y="290" font-size="11.5" font-family="Consolas, monospace" fill="#0F6CBD">564099-solin-app</text>
-  <text x="1170" y="308" font-size="11.5" font-family="Consolas, monospace" fill="#0F6CBD">.eastus2.azurecontainer.io:8080</text>
-  <text x="1170" y="330" font-size="11.5" fill="#5E7386">Swagger UI · Postman · curl</text>
+  <!-- 6: app <-> db -->
+  <path d="M742,566 L782,566" stroke="#107C41" stroke-width="2.5" marker-end="url(#setaVerde)"/>
+  <text x="762" y="558" text-anchor="middle" class="tm" fill="#0B5C31">JDBC</text>
 
-  <rect x="1150" y="378" width="296" height="196" rx="12" fill="#FFFFFF" stroke="#C3D4E2" stroke-width="1.6"/>
-  <rect x="1150" y="378" width="296" height="40" rx="12" fill="#6B2FA0"/>
-  <rect x="1150" y="400" width="296" height="18" fill="#6B2FA0"/>
-  <text x="1170" y="405" font-size="15" font-weight="600" fill="#FFFFFF">CRUD — 2 tabelas relacionadas</text>
+  <!-- 7: db -> file share -->
+  <path d="M1072,548 C1180,548 1240,500 1260,448" stroke="#0F6CBD" stroke-width="2.5" fill="none" marker-end="url(#setaAzul)"/>
 
-  <circle cx="1182" cy="447" r="6" fill="#107C41"/>
-  <text x="1198" y="452" font-size="12.5" fill="#2C5573">POST   /api/tutores  ·  /api/pets</text>
-  <circle cx="1182" cy="477" r="6" fill="#0F6CBD"/>
-  <text x="1198" y="482" font-size="12.5" fill="#2C5573">GET    /api/tutores  ·  /api/pets</text>
-  <circle cx="1182" cy="507" r="6" fill="#C75300"/>
-  <text x="1198" y="512" font-size="12.5" fill="#2C5573">PUT    /api/tutores/{id} · /pets/{id}</text>
-  <circle cx="1182" cy="537" r="6" fill="#B0202B"/>
-  <text x="1198" y="542" font-size="12.5" fill="#2C5573">DELETE /api/tutores/{id} · /pets/{id}</text>
-  <text x="1170" y="564" font-size="10.5" fill="#6B8CA6">cada operação comprovada por SELECT no banco</text>
+  <!-- 8: cliente -> ACI app (contorna por fora, sem cruzar nada) -->
+  <path d="M1108,158 L388,158 L388,566 L446,566" stroke="#4A6274" stroke-width="2"
+        fill="none" marker-end="url(#seta)" stroke-dasharray="8 4"/>
+  <text x="748" y="150" text-anchor="middle" class="tm">HTTP :8080 · /solin/api</text>
 
-  <rect x="1150" y="606" width="296" height="154" rx="12" fill="#FFFFFF" stroke="#C3D4E2" stroke-width="1.6"/>
-  <rect x="1150" y="606" width="296" height="40" rx="12" fill="#107C41"/>
-  <rect x="1150" y="628" width="296" height="18" fill="#107C41"/>
-  <text x="1170" y="633" font-size="15" font-weight="600" fill="#FFFFFF">Evidência no banco</text>
-  <rect x="1168" y="662" width="260" height="80" rx="6" fill="#1E2B36"/>
-  <text x="1180" y="684" font-size="10.5" font-family="Consolas, monospace" fill="#7FD98F">mysql -h 564099-solin-db... \</text>
-  <text x="1180" y="702" font-size="10.5" font-family="Consolas, monospace" fill="#7FD98F">  -u solin -p solin -e \</text>
-  <text x="1180" y="720" font-size="10.5" font-family="Consolas, monospace" fill="#E8E8E8">  "SELECT * FROM TB_PET;"</text>
+  <!-- ============ NUMEROS ============ -->
+  <g>
+    <circle cx="201" cy="180" r="14" fill="#107C41"/><text x="201" y="185" text-anchor="middle" class="num">1</text>
+    <circle cx="201" cy="278" r="14" fill="#107C41"/><text x="201" y="283" text-anchor="middle" class="num">2</text>
+    <circle cx="927" cy="336" r="14" fill="#4A6274"/><text x="927" y="341" text-anchor="middle" class="num">3</text>
+    <circle cx="404" cy="512" r="14" fill="#0F6CBD"/><text x="404" y="517" text-anchor="middle" class="num">4</text>
+    <circle cx="560" cy="474" r="14" fill="#0F6CBD"/><text x="560" y="479" text-anchor="middle" class="num">5</text>
+    <circle cx="762" cy="596" r="14" fill="#107C41"/><text x="762" y="601" text-anchor="middle" class="num">6</text>
+    <circle cx="1200" cy="490" r="14" fill="#0F6CBD"/><text x="1200" y="495" text-anchor="middle" class="num">7</text>
+    <circle cx="1090" cy="228" r="14" fill="#4A6274"/><text x="1090" y="233" text-anchor="middle" class="num">8</text>
+  </g>
 
-  <!-- ================= SETAS DE FLUXO ================= -->
-  <!-- VM -> ACR (push) -->
-  <path d="M324 660 C356 660 360 300 396 274" fill="none" stroke="#107C41" stroke-width="2.6" marker-end="url(#setaVerde)"/>
-  <rect x="300" y="430" width="86" height="22" rx="5" fill="#107C41"/>
-  <text x="311" y="446" font-size="11.5" font-weight="600" fill="#FFFFFF">docker push</text>
+  <!-- ============ LEGENDA ============ -->
+  <line x1="36" y1="722" x2="1484" y2="722" stroke="#D4E0EA" stroke-width="1.5"/>
+  <text x="36" y="750" class="rec">Fluxo da entrega</text>
 
-  <!-- ACR -> ACI App (pull) -->
-  <path d="M520 330 L520 388" fill="none" stroke="#C75300" stroke-width="2.6" marker-end="url(#setaLaranja)"/>
-  <rect x="452" y="345" width="66" height="21" rx="5" fill="#C75300"/>
-  <text x="461" y="360" font-size="11" font-weight="600" fill="#FFFFFF">pull</text>
+  <g>
+    <circle cx="50" cy="782" r="13" fill="#107C41"/><text x="50" y="787" text-anchor="middle" class="num">1</text>
+    <text x="76" y="787" class="t">Código versionado no GitHub — o vídeo começa com o <tspan font-family="Consolas,monospace" font-size="13">git clone</tspan> do repositório.</text>
 
-  <!-- ACR -> ACI DB (pull) -->
-  <path d="M660 330 C700 348 880 350 900 388" fill="none" stroke="#C75300" stroke-width="2.6" marker-end="url(#setaLaranja)"/>
-  <rect x="742" y="336" width="66" height="21" rx="5" fill="#C75300"/>
-  <text x="751" y="351" font-size="11" font-weight="600" fill="#FFFFFF">pull</text>
+    <circle cx="50" cy="818" r="13" fill="#107C41"/><text x="50" y="823" text-anchor="middle" class="num">2</text>
+    <text x="76" y="823" class="t">Dockerfiles do App e do Banco; o <tspan font-family="Consolas,monospace" font-size="13">docker compose</tspan> valida o conjunto localmente antes da nuvem.</text>
 
-  <!-- Storage <-> ACI DB (volume) -->
-  <path d="M928 330 L928 388" fill="none" stroke="#107C41" stroke-width="2.6" stroke-dasharray="7 4" marker-end="url(#setaVerde)"/>
-  <rect x="940" y="342" width="128" height="21" rx="5" fill="#107C41"/>
-  <text x="950" y="357" font-size="11" font-weight="600" fill="#FFFFFF">volume persistente</text>
+    <circle cx="50" cy="854" r="13" fill="#4A6274"/><text x="50" y="859" text-anchor="middle" class="num">3</text>
+    <text x="76" y="859" class="t"><tspan font-family="Consolas,monospace" font-size="13">docker build</tspan> e <tspan font-family="Consolas,monospace" font-size="13">docker push</tspan> rodam na VM Linux e publicam as duas imagens no ACR.</text>
 
-  <!-- ACI App <-> ACI DB -->
-  <path d="M700 500 L774 500" fill="none" stroke="#6B2FA0" stroke-width="2.8" marker-end="url(#setaRoxa)"/>
-  <rect x="672" y="462" width="130" height="22" rx="5" fill="#6B2FA0"/>
-  <text x="681" y="478" font-size="11" font-weight="600" fill="#FFFFFF">JDBC 3306 (FQDN)</text>
+    <circle cx="50" cy="890" r="13" fill="#0F6CBD"/><text x="50" y="895" text-anchor="middle" class="num">4</text>
+    <text x="76" y="895" class="t">Todos os recursos são criados por <tspan font-family="Consolas,monospace" font-size="13">az</tspan> CLI, a partir dos scripts versionados — nada é criado pelo portal.</text>
 
-  <!-- Usuario -> App -->
-  <path d="M1146 280 C1120 300 720 330 700 450" fill="none" stroke="#0F6CBD" stroke-width="2.6" marker-end="url(#seta)"/>
-  <rect x="1000" y="300" width="128" height="22" rx="5" fill="#0F6CBD"/>
-  <text x="1010" y="316" font-size="11" font-weight="600" fill="#FFFFFF">HTTP · IP público</text>
+    <circle cx="790" cy="782" r="13" fill="#0F6CBD"/><text x="790" y="787" text-anchor="middle" class="num">5</text>
+    <text x="816" y="787" class="t">Cada ACI puxa a sua imagem do ACR com credencial do próprio registro.</text>
 
-  <!-- App -> CRUD -->
-  <path d="M700 540 C900 560 1090 470 1146 470" fill="none" stroke="#6B2FA0" stroke-width="2.2" stroke-dasharray="6 4" marker-end="url(#setaRoxa)"/>
+    <circle cx="790" cy="818" r="13" fill="#107C41"/><text x="790" y="823" text-anchor="middle" class="num">6</text>
+    <text x="816" y="823" class="t">A aplicação conversa com o banco por JDBC, dentro do grupo de recursos.</text>
 
-  <!-- DB -> evidencia -->
-  <path d="M1080 580 C1116 600 1130 660 1146 676" fill="none" stroke="#107C41" stroke-width="2.2" stroke-dasharray="6 4" marker-end="url(#setaVerde)"/>
+    <circle cx="790" cy="854" r="13" fill="#0F6CBD"/><text x="790" y="859" text-anchor="middle" class="num">7</text>
+    <text x="816" y="859" class="t">O MySQL grava no File Share: o container é descartável, o dado não.</text>
 
-  <!-- ================= LEGENDA ================= -->
-  <rect x="34" y="788" width="1412" height="118" rx="12" fill="#FFFFFF" stroke="#C3D4E2" stroke-width="1.6"/>
-  <text x="54" y="816" font-size="14.5" font-weight="600" fill="#1B3A57">Legenda dos fluxos</text>
+    <circle cx="790" cy="890" r="13" fill="#4A6274"/><text x="790" y="895" text-anchor="middle" class="num">8</text>
+    <text x="816" y="895" class="t">O cliente consome a API pelo FQDN público do ACI, na porta 8080.</text>
+  </g>
 
-  <line x1="56" y1="842" x2="100" y2="842" stroke="#107C41" stroke-width="3"/>
-  <text x="110" y="847" font-size="12.5" fill="#40566B">Publicação das imagens — a VM compila e envia ao registro privado</text>
-
-  <line x1="56" y1="868" x2="100" y2="868" stroke="#C75300" stroke-width="3"/>
-  <text x="110" y="873" font-size="12.5" fill="#40566B">Download das imagens — cada ACI puxa a sua imagem do ACR ao subir</text>
-
-  <line x1="640" y1="842" x2="684" y2="842" stroke="#6B2FA0" stroke-width="3"/>
-  <text x="694" y="847" font-size="12.5" fill="#40566B">Tráfego da aplicação — API conversa com o banco por JDBC no FQDN público</text>
-
-  <line x1="640" y1="868" x2="684" y2="868" stroke="#0F6CBD" stroke-width="3"/>
-  <text x="694" y="873" font-size="12.5" fill="#40566B">Acesso do usuário — requisições HTTP chegam ao container da API na porta 8080</text>
-
-  <line x1="1150" y1="842" x2="1194" y2="842" stroke="#107C41" stroke-width="3" stroke-dasharray="7 4"/>
-  <text x="1204" y="847" font-size="12.5" fill="#40566B">Persistência dos dados</text>
-  <text x="1150" y="873" font-size="11.5" fill="#6B8CA6">Traço contínuo = criação · tracejado = uso contínuo</text>
+  <line x1="36" y1="930" x2="1484" y2="930" stroke="#D4E0EA" stroke-width="1.5"/>
+  <text x="36" y="958" class="ts">Containerização completa: <tspan font-weight="600">App e Banco</tspan> rodam em container na nuvem — sem misturar com serviços PaaS, como exige a Opção 1.</text>
+  <text x="36" y="980" class="ts">A VM Linux não hospeda nada da solução: existe só para compilar as imagens e é excluída junto com o grupo de recursos, no passo 11 do README.</text>
 </svg>
