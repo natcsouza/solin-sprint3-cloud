@@ -24,6 +24,23 @@ Instances**. Todos os recursos são criados via **Azure CLI**.
 
 ---
 
+## Vídeo da apresentação
+
+Execução completa da entrega no **Azure Cloud Shell**, do grupo de recursos vazio
+até a limpeza — build e publicação das imagens, os dois containers no ar, o CRUD
+com evidência direto no banco e a prova de persistência após reiniciar o container.
+
+| | |
+|---|---|
+| **Assistir / baixar** | [`docs/video/SOLIN-Sprint3-apresentacao.mp4`](docs/video/SOLIN-Sprint3-apresentacao.mp4) |
+| **Download direto** | [Release `v1.0-sprint3`](../../releases/tag/v1.0-sprint3) |
+| Duração | 16 min 55 s |
+| Formato | MP4 · H.264 · áudio AAC · 42,6 MB |
+
+O GitHub reproduz o arquivo na própria página, sem precisar clonar o repositório.
+
+---
+
 ## Descrição da solução
 
 O mercado pet sofre de um problema de **descontinuidade do cuidado**: o tutor só
@@ -341,7 +358,9 @@ docker compose down
 │   ├── Dockerfile             MySQL 8.0 com o DDL embutido
 │   └── init/01-ddl.sql
 ├── docs/
-│   └── arquitetura.svg
+│   ├── arquitetura.svg
+│   └── video/
+│       └── SOLIN-Sprint3-apresentacao.mp4   vídeo da entrega (16m55s)
 ├── json/                      payloads de teste dos 4 verbos
 └── scripts/                   provisionamento 100% Azure CLI
     ├── 00-variaveis.sh
